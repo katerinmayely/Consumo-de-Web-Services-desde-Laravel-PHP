@@ -92,7 +92,7 @@ class AlumnoController extends Controller
      * Metodo para mostrar formulario para actualizacion de alumno.
      */
     public function mostrar_form_update($id){
-        $alumnoActualizar = $this->mostrar_alumno($id);
+        $alumnoActualizar = $this->obtener_alumno_alumno($id);
         return view('actualizarAlumno', compact('alumnoActualizar'));
     }
 
